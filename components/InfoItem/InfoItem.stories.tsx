@@ -1,7 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { InfoItem } from "./InfoItem";
-import { PhoneAndroid as PhoneAndroidIcon } from "@mui/icons-material";
 import { stringResources } from "../../values/strings";
+import { PhoneSvgIcon } from "../Icons/PhoneSvg";
+import { EmailSvgIcon } from "../Icons/EmailSvg";
+import { ShareSvgIcon } from "../Icons/ShareSvg";
+import { Box } from "@mui/material";
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof InfoItem> = {
   title: "Components/Info Item",
@@ -12,11 +15,34 @@ const meta: Meta<typeof InfoItem> = {
 
 export default meta;
 type Story = StoryObj<typeof InfoItem>;
+
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const BasicExample: Story = {
+
+export const Mobile: Story = {
   args: {
-    Icon: PhoneAndroidIcon,
+    Icon: PhoneSvgIcon,
     info: stringResources.mobile,
-    borderColor: "primary.main",
   },
 };
+
+export const Email: Story = {
+  args: {
+    Icon: EmailSvgIcon,
+    info: stringResources.email,
+  },
+};
+
+export const Social: Story = {
+  args: {
+    Icon: ShareSvgIcon,
+    info: stringResources.social,
+  },
+};
+
+export const InfoSection = () => (
+  <Box display={"flex"} flexDirection={"column"}>
+    <InfoItem Icon={PhoneSvgIcon} info={stringResources.mobile} />
+    <InfoItem Icon={EmailSvgIcon} info={stringResources.email} />
+    <InfoItem Icon={ShareSvgIcon} info={stringResources.social} />
+  </Box>
+);
