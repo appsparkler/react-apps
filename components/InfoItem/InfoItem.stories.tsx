@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { InfoItem } from "./InfoItem";
+import { InfoItem, InfoSection } from "./InfoItem";
 import { stringResources } from "../../values/strings";
 import { PhoneSvgIcon } from "../Icons/PhoneSvg";
 import { EmailSvgIcon } from "../Icons/EmailSvg";
@@ -39,10 +39,4 @@ export const Social: Story = {
   },
 };
 
-export const InfoSection = () => (
-  <Box display={"flex"} flexDirection={"column"}>
-    <InfoItem Icon={PhoneSvgIcon} info={stringResources.mobile} />
-    <InfoItem Icon={EmailSvgIcon} info={stringResources.email} />
-    <InfoItem Icon={ShareSvgIcon} info={stringResources.social} />
-  </Box>
-);
+export const infoSection = () => <InfoSection />;

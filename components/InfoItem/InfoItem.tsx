@@ -1,14 +1,10 @@
-import { PhoneAndroid } from "@mui/icons-material";
-import { Box, BoxProps, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
+import { InfoItemFC } from "../../types";
 import { PhoneSvgIcon } from "../Icons/PhoneSvg";
-
-interface InfoItemProps {
-  Icon: typeof PhoneSvgIcon;
-  info: string | undefined;
-}
-
-type InfoItemFC = React.FC<InfoItemProps>;
+import { EmailSvgIcon } from "../Icons/EmailSvg";
+import { ShareSvgIcon } from "../Icons/ShareSvg";
+import { stringResources } from "../../values/strings";
 
 export const InfoItem: InfoItemFC = ({ Icon, info }) => {
   return (
@@ -35,3 +31,11 @@ export const InfoItem: InfoItemFC = ({ Icon, info }) => {
     </>
   );
 };
+
+export const InfoSection = () => (
+  <Box display={"flex"} flexDirection={"column"}>
+    <InfoItem Icon={PhoneSvgIcon} info={stringResources.mobile} />
+    <InfoItem Icon={EmailSvgIcon} info={stringResources.email} />
+    <InfoItem Icon={ShareSvgIcon} info={stringResources.social} />
+  </Box>
+);
