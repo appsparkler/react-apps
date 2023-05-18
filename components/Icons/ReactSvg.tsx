@@ -1,7 +1,7 @@
-import { SvgIconProps } from "@mui/material";
+import { SvgIcon, SvgIconProps } from "@mui/material";
 
 export const ReactSvg: React.FC<SvgIconProps> = (props) => (
-  <svg
+  <SvgIcon
     xmlns="http://www.w3.org/2000/svg"
     viewBox="-11.5 -10.23174 23 20.46348"
     {...props}
@@ -13,5 +13,5 @@ export const ReactSvg: React.FC<SvgIconProps> = (props) => (
       <ellipse rx="11" ry="4.2" transform="rotate(60)" />
       <ellipse rx="11" ry="4.2" transform="rotate(120)" />
     </g>
-  </svg>
+  </SvgIcon>
 );
