@@ -1,8 +1,10 @@
 import { stringResources } from "@/values/strings";
-import { Box, BoxProps, Typography } from "@mui/material";
 import { getGraidentTextStyle } from "./getGraidentTextStyle";
 import { AndroidSvg } from "../Icons/AndroidSvg";
 import { ReactSvg } from "../Icons/ReactSvg";
+import { Box } from "@/lib/mui/Box";
+import { Typography } from "@/lib/mui/Typography";
+import { BoxProps } from "@mui/material";
 
 export const HeroSection: React.FC<{ wrapperBoxProps: BoxProps }> = ({
   wrapperBoxProps = {},
