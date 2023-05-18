@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { InfoItem, InfoSection } from "./InfoItem";
+import { InfoItem } from "./InfoItem";
 import { stringResources } from "@/values/strings";
 import { PhoneSvgIcon } from "@/components/Icons/PhoneSvg";
 import { EmailSvgIcon } from "@/components/Icons/EmailSvg";
@@ -38,5 +38,3 @@ export const Social: Story = {
     info: stringResources.social,
   },
 };
-
-export const infoSection = () => <InfoSection />;

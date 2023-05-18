@@ -31,11 +31,3 @@ export const InfoItem: InfoItemFC = ({ Icon, info }) => {
     </>
   );
 };
-
-export const InfoSection = () => (
-  <Box display={"flex"} flexDirection={"column"}>
-    <InfoItem Icon={PhoneSvgIcon} info={stringResources.mobile} />
-    <InfoItem Icon={EmailSvgIcon} info={stringResources.email} />
-    <InfoItem Icon={ShareSvgIcon} info={stringResources.social} />
-  </Box>
-);
