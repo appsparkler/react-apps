@@ -1,4 +1,9 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import {
+  CssBaseline,
+  GlobalStyles,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
 import "@fontsource/lato/900.css";
 import "@fontsource/montserrat/100.css";
 import { Decorator } from "@storybook/react";
@@ -32,6 +37,22 @@ export const ThemeProviderDecorator: Decorator = (Story) => {
       })}
     >
       <CssBaseline />
+      <GlobalStyles
+        styles={{
+          html: {
+            height: "100%",
+          },
+          body: {
+            height: "100%",
+          },
+          "#storybook-root": {
+            height: "100%",
+          },
+          ".sb-show-main.sb-main-padded": {
+            padding: 0,
+          },
+        }}
+      />
       <Story />
     </ThemeProvider>
   );
