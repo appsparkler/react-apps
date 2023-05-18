@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { InfoItem, InfoSection } from "./InfoItem";
-import { stringResources } from "../../values/strings";
-import { PhoneSvgIcon } from "../Icons/PhoneSvg";
-import { EmailSvgIcon } from "../Icons/EmailSvg";
-import { ShareSvgIcon } from "../Icons/ShareSvg";
-import { Box } from "@mui/material";
+import { stringResources } from "@/values/strings";
+import { PhoneSvgIcon } from "@/components/Icons/PhoneSvg";
+import { EmailSvgIcon } from "@/components/Icons/EmailSvg";
+import { ShareSvgIcon } from "@/components/Icons/ShareSvg";
+
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof InfoItem> = {
   title: "Components/Info Item",
