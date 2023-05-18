@@ -9,8 +9,8 @@ export const HeroSection = () => {
       <Box
         sx={(theme) => ({
           ...getGraidentTextStyle(
-            theme.palette.primary.main,
-            theme.palette.secondary.main
+            theme.palette.secondary.main,
+            theme.palette.primary.main
           ),
         })}
       >

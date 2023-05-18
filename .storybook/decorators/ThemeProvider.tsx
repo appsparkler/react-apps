@@ -20,7 +20,7 @@ export const ThemeProviderDecorator: Decorator = (Story) => {
           },
         },
         palette: {
-          mode: "light",
+          mode: "dark",
           primary: {
             main: "#3DDC84",
           },
