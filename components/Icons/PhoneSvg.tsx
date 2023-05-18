@@ -1,3 +1,4 @@
+"use client";
 import { SvgIcon, SvgIconProps } from "@mui/material";
 
 export const PhoneSvgIcon: React.FC<SvgIconProps> = (props) => {
