@@ -14,6 +14,7 @@ describe("HeroSection Functional Tests", () => {
     render(<HeroSection />);
     expect(screen.getByText(stringResources.name)).toBeVisible();
     expect(screen.getByText(stringResources.title)).toBeVisible();
-    expect(screen.getByLabelText("android image logo")).toBeVisible();
+    expect(screen.getByLabelText("android logo")).toBeVisible();
+    expect(screen.getByLabelText("react logo")).toBeVisible();
   });
 });
