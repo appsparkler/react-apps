@@ -1,10 +1,8 @@
-import { Box, Typography } from "@mui/material";
+"use client";
 import React from "react";
 import { InfoItemFC } from "../../types";
-import { PhoneSvgIcon } from "../Icons/PhoneSvg";
-import { EmailSvgIcon } from "../Icons/EmailSvg";
-import { ShareSvgIcon } from "../Icons/ShareSvg";
-import { stringResources } from "../../values/strings";
+import { Box } from "@/lib/mui/Box";
+import { Typography } from "@/lib/mui/Typography";
 
 export const InfoItem: InfoItemFC = ({ Icon, info }) => {
   return (
