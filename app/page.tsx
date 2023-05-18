@@ -1,11 +1,5 @@
-import { Box } from "@/lib/mui/Box";
-import { Typography } from "@/lib/mui/Typography";
-import { stringResources } from "@/values/strings";
+import { App } from "@/components/App";
 
 export default function Home() {
-  return (
-    <Box>
-      <Typography variant="body1">{stringResources.name}</Typography>
-    </Box>
-  );
+  return <App />;
 }
