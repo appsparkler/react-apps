@@ -1,17 +1,18 @@
 import { stringResources } from "@/values/strings";
 import { Box, Typography } from "@mui/material";
+import { getGraidentTextStyle } from "./getGraidentTextStyle";
 
 export const HeroSection = () => {
   return (
     <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
       <Typography variant="h1">{stringResources.name}</Typography>
       <Box
-        sx={{
-          background: ({ palette: { primary, secondary } }) =>
-            `linear-gradient(to right, ${secondary.main}, ${primary.main})`,
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
+        sx={(theme) => ({
+          ...getGraidentTextStyle(
+            theme.palette.primary.main,
+            theme.palette.secondary.main
+          ),
+        })}
       >
         <Typography variant="subtitle1" sx={{}}>
           {"React & Android Developer"}
