@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroSection Snapshots should match snapshots 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-dvxtzn"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+    >
+      Aakash Shah
+    </h1>
+    <div
+      class="MuiBox-root css-13m36ks"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+      >
+        React & Android Developer
+      </h6>
+    </div>
+  </div>
+</div>
+`;
