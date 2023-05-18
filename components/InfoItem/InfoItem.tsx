@@ -22,7 +22,7 @@ export const InfoItem: InfoItemFC = ({ Icon, info }) => {
         alignItems={"center"}
       >
         <Icon sx={{ height: 28, width: 28 }} />
-        <Typography variant="h6" ml={1}>
+        <Typography variant="h6" ml={1} className="selection-react">
           {info}
         </Typography>
       </Box>

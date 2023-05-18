@@ -1,3 +1,4 @@
+"use client";
 import { stringResources } from "@/values/strings";
 import { getGraidentTextStyle } from "./getGraidentTextStyle";
 import { AndroidSvg } from "../Icons/AndroidSvg";
@@ -6,8 +7,8 @@ import { Box } from "@/lib/mui/Box";
 import { Typography } from "@/lib/mui/Typography";
 import { BoxProps } from "@mui/material";
 
-export const HeroSection: React.FC<{ wrapperBoxProps: BoxProps }> = ({
-  wrapperBoxProps = {},
+export const HeroSection: React.FC<{ wrapperBoxProps?: BoxProps }> = ({
+  wrapperBoxProps,
 }) => {
   return (
     <Box
@@ -19,7 +20,9 @@ export const HeroSection: React.FC<{ wrapperBoxProps: BoxProps }> = ({
     >
       <ReactSvg aria-label="react logo" sx={{ height: 150, width: 150 }} />
       <AndroidSvg aria-label="android logo" sx={{ height: 75, width: 180 }} />
-      <Typography variant="h1">{stringResources.name}</Typography>
+      <Typography variant="h1" className="special-selection">
+        {stringResources.name}
+      </Typography>
       <Box
         sx={(theme) => ({
           ...getGraidentTextStyle(
@@ -28,7 +31,11 @@ export const HeroSection: React.FC<{ wrapperBoxProps: BoxProps }> = ({
           ),
         })}
       >
-        <Typography variant="subtitle1" sx={{}}>
+        <Typography
+          variant="subtitle2"
+          component="p"
+          className="selection-none"
+        >
           {"React & Android Developer"}
         </Typography>
       </Box>
