@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import { HeroSection } from "./HeroSection/HeroSection";
+import { Box } from "@/lib/mui/Box";
 import { InfoSection } from "./InfoItem/InfoSection";
+import { HeroSection } from "./HeroSection/HeroSection";
 
 export const App = () => (
   <Box
